@@ -2,6 +2,9 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #B1D5FF;
     color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 header {
@@ -12,13 +15,20 @@ h1 {
     font: 500;
     font-size: 100px;
     color: black;
+    margin-bottom: -30px;
+}
+
+.header_wrapper, .main_wrapper, .footer_wrapper {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 .h1_container {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 .intro {
@@ -28,6 +38,7 @@ h1 {
 .intro_wrapper {
     margin-left: 70px;
     margin-right: 70px;
+	border: 0;
 }
 
 main {
@@ -57,7 +68,7 @@ h3 {
 
 .section_desc {
     font-size: 50px;
-    margin-left: 40px;
+    margin-left: 70px;
 }
 
 .product_wrapper {
@@ -66,8 +77,8 @@ h3 {
 }
 
 .pic_size {
-    width: 900px;
-    height: 900px;
+    width: 400px;
+    height: 400px;
 }
 
 .pic_container {
@@ -87,10 +98,6 @@ h3 {
 }
 
 footer {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
     text-align: center;
     font-size: 50px;
 }
